@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url("./pexels-fauxels-3184395.jpg") center center fixed;
+    background-size: cover;
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin:1rem;
+    padding:2rem;
+    background: white;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    bottom:20%;
+    left:20%
+}
+
+.container,.form__input,.form__button{
+    font:500px 1rem 'Bree Serif';
+}
+.form__title{
+    margin: 2rem;
+    text-align: center;
+}
+
+.form > *:first-child{
+     margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.form__message--success{
+    color:aquamarine;
+}
+.form__message--error{
+    color:red;
+}
+.form__input--group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    border: 1px solid rgb(47, 0, 128);
+    box-sizing: border-box;
+    outline: none;
+    background: whitesmoke;
+    border-radius: white;
+    transition: background 0.2s , border-color 0.2s;
+}
+.form__input:focus{
+    background: white;
+    border-color: black;
+
+}
+.form__input--error{
+    color: red;
+    border-color: red;
+}
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: red;
+}
+.form__button{
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  width: 100%;
+  border-radius: black;
+}
+.form__button:hover{
+    background: wheat;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.form__text{
+    text-align: center;
+    padding:8px;
+}
+.form__link{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.form__link:hover{
+    text-decoration: underline;
+    color:royalblue;
+}
+.form--hidden{
+    display: none;
+}
+
